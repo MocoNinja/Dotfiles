@@ -1,0 +1,14 @@
+set number relativenumber
+
+
+function! ToggleRelativeNumber()
+	if &relativenumber == 1
+		set norelativenumber
+		set number
+	else
+		set relativenumber
+	endif
+endfunction
+
+nmap <F5> :call ToggleRelativeNumber()<CR>
+imap <F5> :call ToggleRelativeNumber()<CR>a
