@@ -9,6 +9,8 @@ set nocompatible
 set nobackup
 set nowritebackup
 set noswapfile
+set undofile
+set undodir=~/.vim/undohist
 " ----------------------------- "
 " Formatting, tabs and the likes
 " ----------------------------- "
