@@ -29,7 +29,7 @@ set wildmenu            " enable visual wildmenu
 set number              " show line numbers
 set relativenumber      " show numbers as relative by default
 set showmatch           " higlight matching parentheses and brackets
-colorscheme desert
+colorscheme molokai
 " ----------------------------- "
 " Syntax, highlighting 'n shit 
 " ----------------------------- "

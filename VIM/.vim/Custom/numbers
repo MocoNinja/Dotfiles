@@ -1,6 +1,5 @@
 set number relativenumber
 
-
 function! ToggleRelativeNumber()
 	if &relativenumber == 1
 		set norelativenumber
