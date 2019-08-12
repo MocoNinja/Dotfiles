@@ -1,9 +1,8 @@
-set number relativenumber
+set number norelativenumber
 
 function! ToggleRelativeNumber()
 	if &relativenumber == 1
 		set norelativenumber
-		set number
 	else
 		set relativenumber
 	endif

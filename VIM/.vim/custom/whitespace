@@ -1,0 +1,12 @@
+function! ToggleRenderWhitespace()
+	if &listchars == 1
+        unset listchars
+        unset list!
+	else
+        set list!
+        set listchars=tab:>.,trail:*,extends:\#,nbsp:.,space:·,eol:$
+	endif
+endfunction
+
+nmap <F4> :call ToggleRenderWhitespace()<CR>
+imap <F4> :call ToggleRenderWhitespace()<CR>a

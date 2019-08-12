@@ -26,8 +26,7 @@ set showmode            " always show which more are we in
 set laststatus=2        " always show statusbar
 set wildmenu            " enable visual wildmenu
 " set nowrap              " don't wrap long lines
-set number              " show line numbers
-set relativenumber      " show numbers as relative by default
+source $HOME/.vim/custom/numbers
 set showmatch           " higlight matching parentheses and brackets
 colorscheme molokai
 " ----------------------------- "
@@ -38,15 +37,10 @@ colorscheme molokai
 " Display tabs, spaces 'n shit "
 " ----------------------------- "
  set encoding=utf-8
- set list!
- set listchars=tab:>.,trail:*,extends:\#,nbsp:.,space:·,eol:$
+ source $HOME/.vim/custom/whitespace
 " ----------------------------- "
 " Specific spacing options for certain programming languages
 " ----------------------------- "
 autocmd FileType html,css,sass,scss,javascript setlocal sw=2 sts=2
 autocmd FileType json setlocal sw=2 sts=2
 autocmd FileType yaml setlocal sw=2 sts=2
-" ----------------------------- "
-" Custom functionality
-" ----------------------------- "
-source $HOME/.vim/Custom/numbers
