@@ -8,5 +8,17 @@ function! ToggleRelativeNumber()
 	endif
 endfunction
 
+function! ToggleDisplayNumber()
+    if &number == 1
+        set norelativenumber
+        set nonu
+    else
+        set number
+    endif
+endfunction
+
 nmap <F5> :call ToggleRelativeNumber()<CR>
 imap <F5> :call ToggleRelativeNumber()<CR>a
+
+nmap <S-F5> :call ToggleDisplayNumber()<CR>
+imap <S-F5> :call ToggleDisplayNumber()<CR>a
